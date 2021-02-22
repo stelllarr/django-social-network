@@ -19,16 +19,16 @@
     <script src="{% static "searchFriend.js" %}"></script>
 
     {% if title %}
-        <title>Django Social Network - {{ title }}</title>
+        <title>JagoDB Stablerel - {{ title }}</title>
     {% else %}
-        <title>Django Social Network</title>
+        <title>JagoDB Stablerel</title>
     {% endif %}
 </head>
 <body>
     <header class="site-header">
       <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
         <div class="container">
-          <a class="navbar-brand mr-4" href="{% url 'profile' %}">Django Social Network</a>
+          <a class="navbar-brand mr-4" href="{% url 'profile' %}">Jago</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           </button>
@@ -46,7 +46,7 @@
             <div class="navbar-nav">
               {% if user.is_authenticated %}
                   <a class="nav-item nav-link" href="{% url 'events' %}">Events</a>
-                  <a class="nav-item nav-link" href="{% url 'discussions' %}">Discussion</a>
+                  <a class="nav-item nav-link" href="{% url 'discussions' %}">Jago Boards</a>
                   <a class="nav-item nav-link" href="{% url 'logout' %}">Logout</a>
               {% else %}
                   <a class="nav-item nav-link" href="{% url 'login' %}">Login</a>
