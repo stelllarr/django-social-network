@@ -29,7 +29,7 @@
     <header class="site-header">
       <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
         <div class="container">
-          <a class="navbar-brand mr-4" href="{% url 'profile' %}">Jago 6 🌈</a>
+          <a class="navbar-brand mr-4" href="{% url 'profile' %}">Jago 6U 🌈</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           </button>
@@ -47,12 +47,11 @@
             <div class="navbar-nav">
               {% if user.is_authenticated %}
                   <a class="nav-item nav-link" href="{% url 'events' %}">Events 🔅</a>
-                <a class="nav-item nav-link" href="https://discord.gg/XZWTfnu7e4">Discord 🔬</a>
-                 <a class="nav-item nav-link" href="https://db6.jagosocial.tk/admin">Control Panel 🧣</a>
+                 <a class="nav-item nav-link" href="https://db6.jagosocial.tk/admin">AdManager 🧣</a>
                     <a class="nav-item nav-link" href="https://trade.jagosocial.tk/">Trade 🎩</a>
                   <a class="nav-item nav-link" href="{% url 'discussions' %}">Updates 🏹</a>
                     <a class="nav-item nav-link" href="https://vk.com/public205002466">VK 🎉</a>
-                  <a class="nav-item nav-link" href="{% url 'logout' %}">Leave 🚪</a>
+                  <a class="nav-item nav-link" href="{% url 'logout' %}">Quit</a>
               {% else %}
                   <a class="nav-item nav-link" href="{% url 'login' %}">Authenticate</a>
               {% endif %}
