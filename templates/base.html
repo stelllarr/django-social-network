@@ -35,7 +35,7 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarToggle">
             <div class="navbar-nav mr-auto">
-              <a class="nav-item nav-link" href="{% url 'about' %}">About</a>
+              <a class="nav-item nav-link" href="{% url 'about' %}">DevUpdates 🏓</a>
               <a class="nav-item nav-link" href="{% url 'profile' %}">
                   {% if user.is_authenticated %}
                     <img class="rounded-circle" src="{{ user.email|gravatar_url:100}}" width="30" height="30">
@@ -51,9 +51,10 @@
                     <a class="nav-item nav-link" href="https://trade.jagosocial.tk/">Trade 🎩</a>
                   <a class="nav-item nav-link" href="{% url 'discussions' %}">Updates 🏹</a>
                     <a class="nav-item nav-link" href="https://vk.com/public205002466">VK 🎉</a>
-                  <a class="nav-item nav-link" href="{% url 'logout' %}">Quit</a>
+                  <a class="nav-item nav-link" href="{% url 'logout' %}">Quit 🏃🏻</a>
               {% else %}
-                  <a class="nav-item nav-link" href="{% url 'login' %}">Authenticate</a>
+                  <a class="nav-item nav-link" href="{% url 'login' %}">Authenticate 🧶</a>
+                <a class="nav-item nav-link" href="{% url 'about' %}">DevUpdates 🏓</a>
               {% endif %}
             </div>
           </div>
