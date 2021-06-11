@@ -20,9 +20,9 @@
     <script src="{% static "searchFriend.js" %}"></script>
 
     {% if title %}
-        <title>Jago 6 - {{ title }}</title>
+        <title>Jago 6U - {{ title }}</title>
     {% else %}
-        <title>Jago 6</title>
+        <title>Jago 6U</title>
     {% endif %}
 </head>
 <body>
@@ -51,10 +51,11 @@
                     <a class="nav-item nav-link" href="https://trade.jagosocial.tk/">Trade 🎩</a>
                   <a class="nav-item nav-link" href="{% url 'discussions' %}">Updates 🏹</a>
                     <a class="nav-item nav-link" href="https://vk.com/public205002466">VK 🎉</a>
+                <a class="nav-item nav-link" href="https://discord.gg/cTtzCxywwt">Discord 💬</a>
                   <a class="nav-item nav-link" href="{% url 'logout' %}">Quit 🏃🏻</a>
               {% else %}
                   <a class="nav-item nav-link" href="{% url 'login' %}">Authenticate 🧶</a>
-                <a class="nav-item nav-link" href="{% url 'about' %}">DevUpdates 🏓</a>
+                <a class="nav-item nav-link" href="https://discord.gg/cTtzCxywwt">Get Invited 🏅</a>
               {% endif %}
             </div>
           </div>
